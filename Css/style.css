@@ -1,0 +1,615 @@
+body {
+	
+	font-size: 16px;
+	font-family: 'Lato', sans-serif;
+	font-weight: 300;
+	color: #4EA8DE;
+  margin: 0;
+	padding: 0;
+	font-family: Arial, sans-serif;
+	background-color: #4EA8DE;
+}
+
+/* Login and Sign up */
+
+
+.wrapper
+{
+    position: relative;
+    width: 400px;
+    height: 550px;
+    background: rgba(255,255,255,.15);
+    box-shadow: 0 8px 32px rgba(31,38,135,.37);
+    border: 1px solid rgba(255,255,255,.18);
+    border-radius: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.input-box
+{
+    position: relative;
+    width: 320px;
+    margin: 30px 30px;
+    border-bottom: 2px solid #fff;
+}
+.input-box label
+{
+    color: #fff;
+    position: absolute;
+    top: 50%;
+    left: 5px;
+    transform: translateY(-50%);
+    font-size: 1em;
+    pointer-events: none;
+    transition: .5s;
+}
+.input-box input:focus~label,
+.input-box input:valid~label
+{
+    top: 5px;
+}
+.input-box input
+{
+    width: 100%;
+    height: 60px;
+    background: transparent;
+    border: none;
+    outline: none;
+    font-size: 1em;
+    color: #fff;
+    padding: 0 35px 0 5px;
+}
+.input-box .icon
+{
+    position: absolute;
+    right: 8px;
+    color: #fff;
+    font-size: 1.2em;
+    line-height: 67px;
+}
+.remember-forgot
+{
+    margin: 25px 25px;
+    font-size: .9em;
+    color: #fff;
+    display: flex;
+    justify-content: space-between;
+}
+.remember-forgot a
+{
+    color: #fff;
+    text-decoration: none;
+}
+.remember-forgot a:hover
+{
+    text-decoration: underline;
+}
+.remember-forgot label input
+{
+    accent-color: #755bea;
+    margin-right: 3px;
+}
+
+.btn:hover
+{
+    transform: translateY(-10px);
+}
+.register-link
+{
+    font-size: .9em;
+    text-align: center;
+    color: #fff;
+    margin: 25px 0 10px;
+}
+.register-link p a
+{
+    color: #fff;
+    text-decoration: none;
+    font-weight: 600;
+}
+.register-link p a:hover
+{
+    text-decoration: underline;
+}
+.blob
+{
+    position: absolute;
+    width: 500px;
+    height: 500px;
+    background: linear-gradient(180deg,rgba(18, 163, 236, 0.42) 31.77%, #6930C3 100%);
+    border-radius: 24% 76% 35% 65% / 27% 36% 64% 73%;
+    transform: translate(-100px, -50px) rotate(-90deg);
+    transition: 1s cubic-bezier(.07,.8,.16,1);
+    animation: animateBlob 20s infinite alternate;
+}
+.blob:hover
+{
+    width: 520px;
+    height: 520px;
+    filter: blur(30px);
+    box-shadow: inset 0 0 0 5px rgba(255,255,255,.6),
+                inset 100px 100px 0 0 #8188c5,
+                inset 200px 200px 0 0 #265d8a,
+                inset 300px 300px 0 0 #6bbdfc;
+}
+
+
+
+
+
+/*slidshow*/
+
+* {box-sizing: border-box}
+body {font-family: Verdana, sans-serif; margin:0}
+.mySlides {display: flex}
+img {vertical-align: middle;}
+
+/* Slideshow container */
+.slideshow-container {
+  width: 95%;
+  position: relative;
+  margin: auto;
+  display: flex;
+}
+
+/* Next & previous buttons */
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  padding: 16px;
+  margin-top: -22px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+  background-color: rgba(161, 0, 214, 0.8);
+}
+
+/* Caption text */
+.text {
+  color: #f2f2f2;
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 15px;
+  width: 100%;
+  text-align: center;
+}
+
+/* Number text  */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #7e13e9;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover {
+  background-color: #4EA8DE;
+}
+
+/* Fading animation */
+.fade {
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+/* On smaller screens, decrease text size */
+@media only screen and (max-width: 300px) {
+  .prev, .next,.text {font-size: 11px}
+}
+
+
+
+
+/*video area*/
+
+#video-container {
+    position: relative;
+	margin-top: 15px;
+    margin-right: 20px;
+    width: 640px;
+    height: 360px;
+    position: relative; 
+    overflow: hidden;
+    border-radius: 25px;
+    
+  }
+
+  #my-video {
+    
+    width: 700px;
+    height: auto;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    overflow: hidden;
+    border-radius: 25px;
+  }
+
+  #play-button {
+      position: absolute;
+			top: 90%;
+			left: 50%;
+      
+			transform: translate(-50%, -50%);
+			width: 50px;
+			height: 50px;
+			border: none;
+			border-radius: 50%;
+			background-color: #6930C3;
+			color: #fff;
+			font-size: 15px;
+			cursor: pointer;
+			
+  }
+  #play-button:hover {
+    background-color: #0080ff;
+    box-shadow: 2px 2px 2px #ccc;
+    transform: translate(-50%, -50%) scale(1.1);
+    transition: all 0.1s ease-in-out;
+  }
+
+/*search area*/
+
+.search {
+  float: right;
+  
+  position: relative;
+	width: 650px;
+  height: 340px;
+	padding: 10px;
+	text-align: center;
+	border: 2px solid #6930C3;
+	background-color: #48BFE3;
+	border-radius: 10px;
+  
+}
+
+h2 {
+	font-size: 18px;
+	margin-bottom: 1px;
+	color: #470098;
+	text-shadow: 2px 2px 2px #dadada;
+}
+
+form {
+	display: inline-block;
+	position: relative;
+  margin-top: 1px;
+  
+}
+
+form label {
+	display: block;
+	font-size: 16px;
+	margin-bottom: 10px;
+	color: #300067;
+	text-shadow: 1px 1px 1px #ccc;
+}
+
+form select {
+	width: 100%;
+	padding: 10px;
+	border: none;
+	border-radius: 5px;
+	box-shadow: 2px 2px 2px #ccc;
+	background-color: #fff;
+	color: #333;
+	font-size: 16px;
+	margin-bottom: 10px;
+}
+
+form input[type="submit"] {
+	width: 100%;
+    height: 45px;
+    background: linear-gradient(90deg,#755bea,#d1a2fd);
+    border: none;
+    outline: none;
+    border-radius: 40px;
+    cursor: pointer;
+    font-size: 1em;
+    color: #fff;
+    font-weight: 500;
+}
+
+form input[type="submit"]:hover {
+	background-color: #6930C3;
+	box-shadow: 4px 4px 4px #ffffff;
+	transform: scale(1.02);
+	transition: all 0.3s ease-in-out;
+}
+
+form:before {
+	content: '';
+	position: absolute;
+	top: -5px;
+	left: -5px;
+	right: -5px;
+	bottom: -5px;
+	border-radius: 10px;
+	z-index: -1;
+	background-color: #56cfe1;
+}
+
+/*footer area*/
+footer
+{  
+    position: relative;
+    margin-top: 15%;
+    width: 100%;
+    background: #48BFE3;
+    height: 25%;
+    padding: 70px 100px;
+    display: flex;
+    justify-content: center;
+}
+footer div
+{
+    text-align: center;
+    justify-content: center;
+}
+footer .col-2
+{
+    flex-grow: 2;
+}
+footer div h3
+{
+    font-weight: 500;
+    margin-bottom: 30px;
+    letter-spacing: 1px;
+	  color: #4300a7;
+    text-shadow: 1.5px 1.5px 1.5px #8f49ff;
+}
+
+footer .col-1 a:hover 
+{
+    background-color: #991dce;
+	transform: scale(1.05);
+	transition: all 0.5s ease-in-out;
+}
+
+footer .col-1 a
+{
+    display: block;
+    font-weight: 550;
+    text-decoration: none;
+    color: #efefef;
+    margin-bottom: 2px;
+}
+footer div form input
+{
+    width: 400px;
+    height: 45px;
+    border-radius: 4px;
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 40px;
+    outline: none;
+    border: none;
+}
+
+footer div form button
+{
+    background: #6930C3;
+    font-weight: 550;
+    border: 2px solid #6930C3;
+    color: #f3f3f3;
+    border-radius: 30px;
+    padding: 10px 30px;
+    font-size: 15px;
+    cursor: pointer;
+}
+footer div form button:hover {
+	background-color: #991dce;
+	transform: scale(1.02);
+	transition: all 0.3s ease-in-out;
+}
+
+.social-icons
+{
+    margin-top: 30px;
+    color: #efefef;
+    
+}
+.social-icons i
+{
+    font-size: 22px;
+    margin: 10px;
+    cursor: pointer;
+}
+footer div p
+{
+    display: block;
+    text-decoration:double;
+    color: #f0f0f0;
+    margin-bottom: 15px;
+}    
+footer .wave
+{
+    position: absolute;
+    top: -100px;
+    left: 0;
+    width: 100%;
+    height: 100px;
+    background: url(wave1.png);
+    background-size: 1200px 100px;
+}
+footer .wave#wave1
+{
+    z-index: 1000;
+    opacity: 1;
+    bottom: 0;
+    animation: animateWave 4s linear infinite;
+}
+footer .wave#wave2
+{
+    z-index: 999;
+    opacity: 0.5;
+    bottom: 10px;
+    animation: animateWave_02 4s linear infinite;
+}
+footer .wave#wave3
+{
+    z-index: 1000;
+    opacity: 0.2;
+    bottom: 15;
+    animation: animateWave 3s linear infinite;
+}
+footer .wave#wave4
+{
+    z-index: 999;
+    opacity: 0.7;
+    bottom: 20px; 
+    animation: animateWave_02 3s linear infinite;
+}
+@keyframes animateWave
+{
+    0%
+    {
+        background-position-x: 1000px;
+    }
+    100%
+    {
+        background-position-x: 0px;
+    }
+}
+@keyframes animateWave_02
+{
+    0%
+    {
+        background-position-x: 0px;
+    }
+    100%
+    {
+        background-position-x: 1000px;
+    }
+}
+
+/*icons style*/
+
+.card
+{   display: flex;
+    width: 250px;
+    height: 250px;
+    display: inline-block;
+    border-radius: 10px;
+    padding: 50px 50px;
+    box-sizing: border-box;
+    cursor: pointer;
+    margin: 30px 100px;
+    justify-items: space-between;
+    background-position: center;
+    background-size: cover;
+    transition: transform 0.5s;
+}
+.card1
+{
+    background-image: url(app11.jpg);
+}
+.card2
+{
+    background-image: url(video11.jpg);
+}
+.card3
+{
+    background-image: url(emer11.jpg);
+}
+.card:hover
+{
+    transform: translateY(-10px);
+}
+.button
+{   border: none;
+    box-shadow: 2px 2px 2px #9900ff;
+    background-color: #7e13e9;
+    position: relative;
+    padding: 10px 30px;
+    margin: 20px 125px;
+    justify-content: center;
+    color: white;
+    border-radius: 20px;
+    cursor: pointer;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 14px;
+    animation: btn-click 0.3s ease-out;
+  }
+
+    .button:hover {
+      background-color: #6930C3;
+      box-shadow: 4px 4px 4px #4EA8DE;
+      transform: scale(1.1);
+      transition: all 0.3s ease-in-out;
+    }
+
+
+.col
+{
+    text-align: center;
+    background-position: center;
+    background-size: cover;
+    transition: transform 0.5s;
+    justify-content: space-between;
+}
+
+.col2 
+{
+  text-align: center;
+  background-position: center;
+  background-size: cover;
+  transition: transform 0.5s;
+  margin: 30px 100px;
+  justify-content: center;
+  
+}
+
+
+
+@keyframes btn-click {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(0.9);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
