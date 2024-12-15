@@ -1,0 +1,455 @@
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Untitled Document</title>
+<style>
+		
+		/* Navigation bar*/
+		nav {
+			background-color: #6930C3;
+            display: flex;
+			position: relative;
+            justify-content: center;
+            align-items: center;
+			color: #fff;	   
+			/*justify-content: space-between;*/
+			padding: 25px;
+			box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3);
+		}
+
+		nav a {
+			color: #fff;
+			text-decoration: none;
+            margin-left: 0;
+			margin-right: 20px;
+			font-weight: bold;
+			padding: 20px;
+			border-radius: 5px;
+			box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.3);
+			transition: all 0.3s ease;
+		}
+
+		nav a:hover {
+			background-color: #fff;
+			color: #554d3e;
+			transform: translateY(-5px);
+			box-shadow: 0px 5px 5px rgba(0, 0, 0, 0.3);
+		}
+		
+		.navigation { 
+			
+			padding: 0px;
+			margin-top: 1px;
+			position:relative;
+		}
+		/* Form styles */
+		form {
+	max-width: 500px;
+	margin: 0 auto;
+	padding: 20px;
+	background-color: #f7f7f7;
+	box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3);
+	border-radius: 5px;
+	text-align: right;
+		}
+
+		label {
+	display: block;
+	margin-bottom: 10px;
+	font-weight: bold;
+	text-align: left;
+		}
+
+		input[type="text"], input[type="email"], input[type="tel"], textarea, select {
+			width: 100%;
+			padding: 10px;
+			border: 1px solid #ccc;
+			border-radius: 5px;
+			margin-bottom: 20px;
+			font-size: 16px;
+			font-family: Arial, sans-serif;
+		}
+
+		input[type="submit"],input[type="button"],button{
+			background-color: #6930C3;
+			color: #fff;
+			padding: 10px 20px;
+			border: none;
+			border-radius: 5px;
+			font-size: 16px;
+			font-weight: bold;
+			cursor: pointer;
+			transition: all 0.3s ease;
+		}
+
+		input[type="submit"]:hover,input[type="button"]:hover,button:hover  {
+	background-color: #554d3e;
+	text-align: right;
+		}
+
+		.radio-group {
+			display: flex;
+			flex-direction: column;
+			margin-bottom: 20px;
+		}
+
+		.radio-group label {
+			margin-bottom: 10px;
+			font-weight: normal;
+		}
+
+		.radio-group input[type="radio"] {
+			margin-right: 10px;
+			margin-bottom: 5px;
+			cursor: pointer;
+		}
+    
+		</style>
+</head>
+
+<body>
+<nav >
+		<div class="navigtion">
+			<a href="#home">Home</a>
+			<a href="#DD">Doctor Details</a>
+			<a href="chanaling_home.html">Channeling</a>
+			<a href="#labtest">Lab Test</a>
+			<a href="#contact">Contact Us</a>
+			<a href="login.html">Login</a>
+			<a href="Signup.html">Register</a>
+		</div>
+</nav>
+
+
+
+    	<form action="pay.html" method="post">
+      <p>
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" class="form-section" required>
+      </p>
+      <p>
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" class="form-section" required>
+      </p>
+      <p>
+        <label for="phone">Phone:</label>
+        <input type="tel" id="phone" name="phone" class="form-section" required>
+        
+        <label for="doctor-selection"><br>
+          <br>
+          <br>
+        Select a Doctor:</label>
+        <select id="doctor-selection" name="doctor-selection"  class="form-section" required>
+			<option value="Dr. Nathan(Cardiologist)">Dr. Nathan(Cardiologist)</option>
+            <option value="Select Doctor" >Select Doctor...</option>
+			<option value="Dr. Samantha(Physician)">Dr. Samantha(Physician)</option>
+			<option value="Dr. Elizabeth(Physician)">Dr. Elizabeth(Physician)</option>
+			<option value="Dr. Kevin(Physician)">Dr. Kevin(Physician)</option>
+			<option value="Dr. Emily(Physician)">Dr. Emily(Physician)</option>
+			<option value="Dr. William(Pediatrician)">Dr. William(Pediatrician)</option>
+			<option value="Dr. Sarah(Pediatrician)">Dr. Sarah(Pediatrician)</option>
+			<option value="Dr. Alexander(Pediatrician)">Dr. Alexander(Pediatrician)</option>
+			<option value="Dr. Gabriella(Pediatrician)">Dr. Gabriella(Pediatrician)</option>
+			<option value="Dr. Benjamin(Eye Surgeon)">Dr. Benjamin(Eye Surgeon)</option>
+			<option value="Dr. Olivia(Eye Surgeon)">Dr. Olivia(Eye Surgeon)</option>
+			<option value="Dr. Christopher(Eye Surgeon)">Dr. Christopher(Eye Surgeon)</option>
+			<option value="Dr. Victoria(Eye Surgeon)">Dr. Victoria(Eye Surgeon)</option>
+			<option value="Dr. Isabella(Cardiologist)">Dr. Isabella(Cardiologist)</option>
+			<option value="Dr. Zachary(Cardiologist)">Dr. Zachary(Cardiologist)</option>
+			<option value="Dr. Ava(Cardiologist)">Dr. Ava(Cardiologist)</option>
+			<option value="All Doctors" >All Doctors...</option>
+        </select>
+        <!-- Button that expands the window -->
+		<button type="button" onClick="expandWindow()" onclick="getcount()">Find a doctor</button>
+
+		<!-- Hidden search bar -->
+		<div id="search-bar" style="display: none;">
+			<select id="Select-Type" name="Select-Type" class="form-section">
+  				<option value="Select Type..." >Select Type...</option>
+  				<option value="Physician">Physician</option>
+  				<option value="Pediatrician">Pediatrician</option>
+  				<option value="Eye Surgeon">Eye Surgeon</option>
+  				<option value="Cardiologist">Cardiologist</option>
+				  <option value="All Types..." >All Types...</option>
+			</select>
+            <input type="text" placeholder="Search for a doctor...(NOT REQUIRED TO SEARCH)" id="userInput_name">
+            
+  			<button type="button" onclick="searchBar()">Search</button>
+		</div>
+
+<!-- JavaScript code for hiden search-bar -->
+<script>
+    var c = 1;
+
+
+    function getCount() {
+        c++;
+        return c;
+    }
+
+    function expandWindow() {
+        var c = getCount();
+		var searchBar = document.getElementById("search-bar");
+        if (c % 2 == 0) {
+            
+            searchBar.style.display = "block";
+            //window.resizeTo(600 , 400);
+        } else {
+            searchBar.style.display = "none";
+            //window.resizeTo(window.innerWidth, window.innerHeight);
+        }
+    }
+</script>
+<!-- JavaScript code for drop down list mechanism-->
+<script>
+	var doctorList = document.getElementById("doctor-selection");
+	var typesList = document.getElementById("Select-Type");
+	function option1() {
+	  typesList.value = "Physician";
+	}
+	function option2() {
+	  typesList.value = "Pediatrician";
+	}
+	function option3() {
+	  typesList.value = "Eye Surgeon";
+	}
+	function option4() {
+	  typesList.value = "Cardiologist";
+	}
+	function option5() {
+	  typesList.value = "Select Type...";
+	}
+	doctorList.addEventListener("change",change_typeList);
+	typesList.addEventListener("change",change_doctorList);
+	function change_typeList() {
+	  var selectedValueFromDoctorList = doctorList.value;
+	  switch (selectedValueFromDoctorList) {  
+		case "Dr. Samantha(Physician)":
+  		case "Dr. Elizabeth(Physician)":
+  		case "Dr. Kevin(Physician)":
+  		case "Dr. Emily(Physician)":
+    		option1();
+    		break;
+  		case "Dr. William(Pediatrician)":
+  		case "Dr. Sarah(Pediatrician)":
+  		case "Dr. Alexander(Pediatrician)":
+  		case "Dr. Gabriella(Pediatrician)":
+    		option2();
+    		break;
+  		case "Dr. Benjamin(Eye Surgeon)":
+  		case "Dr. Olivia(Eye Surgeon)":
+  		case "Dr. Christopher(Eye Surgeon)":
+  		case "Dr. Victoria(Eye Surgeon)":
+    		option3();
+    		break;
+  		case "Dr. Nathan(Cardiologist)":
+  		case "Dr. Isabella(Cardiologist)":
+	 	case "Dr. Zachary(Cardiologist)":
+  		case "Dr. Ava(Cardiologist)":
+    		option4();
+    		break;
+		case "Select Doctor":
+		case "All Doctors":
+		for(var i = 0; i< doctorList.options.length; i++){
+						doctorList.options[i].style.display="";
+					}
+  		default:
+			option5();
+    		break;
+	  }
+	}
+	
+	function change_doctorList(){
+		var selectedValueFromTypeList  = typesList.value;
+		for(var i = 0; i< doctorList.options.length; i++){
+			doctorList.options[i].style.display="none";
+			doctorList.value="Select Doctor";
+		}
+		for(var i = 0; i< doctorList.options.length; i++){
+			var doctorsName_Types=doctorList.options[i].value;
+			//var str_doctorsName_Types=doctorsName_Types.toString();
+			//console.log(doctorsName_Types);
+			//in doctors list i wanted to get the type that in cotes
+			var regExp = /\(([^)]+)\)/;
+			var matchse = regExp.exec(doctorsName_Types);
+			if(matchse!= null){
+  				var doctorsTypes = matchse[1];
+				//console.log(doctorsTypes);
+				//console.log(doctorsName_Types);
+				//console.log("selectedValueFromTypeList -"+selectedValueFromTypeList);
+				if(doctorsTypes==selectedValueFromTypeList){
+					doctorList.options[i].style.display="";
+					
+					//console.log("if");
+				}else if(selectedValueFromTypeList=="Select Type..."||selectedValueFromTypeList=="All Types..."){
+					for(var i = 0; i< doctorList.options.length; i++){
+						doctorList.options[i].style.display="";
+					//console.log("elseif");
+				}
+			}
+		}
+
+		}
+		
+	}
+	</script>
+	<!-- JavaScript code for shearch bar-->
+		<script>
+			function searchBar(){
+				var doctorList = document.getElementById("doctor-selection");
+				var userInput_name= document.getElementById("userInput_name").value;
+				var flag=false;
+				for (var i=0; i<doctorList.options.length; i++){
+					var docElemnt=doctorList.options[i].value;
+					if(docElemnt!="Select Doctor" && docElemnt!="All Doctors"){
+						var doc_name=docElemnt.replace(/\([^)]+\)/g, ''); 
+						if(doc_name==userInput_name){
+							console.log("in if"+ i);
+							flag = true;
+							doctorList.options[i].style.display="";
+							doctorList.value=docElemnt;
+							
+						}else{
+							console.log("in else"+ i);
+							doctorList.options[i].style.display = "none";
+						}
+					}
+				}
+				if(flag==false){
+					for(var i = 0; i< doctorList.options.length; i++){
+						doctorList.options[i].style.display="";
+					}
+					//console.log("userinput-"+ userInput_name);
+					if(userInput_name==null || userInput_name==""){
+						alert("shearch-bar is empty");
+					}else{
+						alert("Sorry, I could not able to finde that doctor");
+					}
+				}
+
+			}
+		</script>
+        
+        <label for="condition"><br>
+          <br>
+          <br>
+          Medical Condition/Reason for Visit:<br>
+        </label>
+        <textarea id="condition" name="condition" rows="4" cols="50" required></textarea>
+        
+        <label for="date"><br>
+        Date of Preferred Appointment:</label>
+        <input type="date" id="date" name="date" required>
+        
+        <label for="time"><br>
+          <br>
+        Preferred Time of Appointment:</label>
+        <input type="time" id="time" name="time" required>
+ 	<!-- JavaScript code for validate time and date-->
+	 <script>
+		var time = document.getElementById("time");
+		var date = document.getElementById("date");
+		var today= new Date();
+		time.addEventListener("change",validate_Time);
+		function validate_Time(){
+		if(date.value==null||date.value==""){
+			alert("pleace selecte the date first ");
+			time.value= "";
+		}else{
+			var now=today.getHours() +":"+ today.getMinutes();
+			var today_date=to_date();
+			var last_date =to_date();
+			//console.log(" "+time.value);
+			//console.log(" "+time);
+			//console.log(" "+now);
+			//console.log(" "+date.value);
+			//console.log(new Date(date.value).getTime());
+			//console.log(new Date(today_date).getTime());
+			//console.log(date.value.toString());
+			//console.log(today_date.toString());
+			if(new Date(date.value).getTime() < new Date(today_date).getTime() ){
+				alert("This date is alrady passed 2");
+				time.value= "";
+				date.value= "";
+				return false;
+			}else{
+				if (time.value > "22:00" || time.value <= "07:00"){
+					if(time>now){
+						alert("we are closed between 10pm and 7am.3");
+						return false;
+						time.value= "";
+					}else if(time>"22:00" && time>="07:00"){
+						alert("we are closed between 10pm and 7am.1");
+						return false;
+						time.value= "";
+				}
+				}else if (time.value > "22:00" || time.value <= "07:00"){
+					alert("we are closed between 10pm and 7am. 2");
+					return false;
+					time.value= "";
+				}
+			}
+		}
+		}
+		function to_date(){
+			var t_year=''+today.getFullYear();
+			var t_month=''+(today.getMonth()+1);
+			var t_date=''+today.getDate();
+			if (t_month.length < 2){
+        		t_month = '0' + t_month;
+			}
+    		if (t_date.length < 2) {
+        		t_day = '0'+ t_day;
+			}
+			var today_date =t_year+"-"+t_month+"-"+t_date;
+			console.log("in func"+today_date);
+			return today_date;
+		}
+	</script>
+      <p><label for="method"><br>
+          <br>
+        Preferred Method of Consultation:</label>
+        <br>
+        <input type="radio" id="video" name="method" value="Video Call" required>
+        <label for="video">Video Call</label>
+        <br>
+        <input type="radio" id="phone-call" name="method" value="Phone Call">
+        <label for="phone-call">Phone Call</label>
+        <br>
+        <input type="radio" id="in-person" name="method" value="In-person">
+        <label for="in-person">In-person</label>
+        <br>
+
+        
+        
+        <label for="additional-info"><br>
+          Additional Information/Comments:<br>
+        </label>
+        <textarea id="additional-info" name="additional-info" rows="4" cols="50"></textarea>
+      <table width="504" border="0">
+        <tr>
+          <td width="226"><a href="chanaling_home.html"><input type="button" value="Back"></a></td>
+          <td width="262" align="right"><p>
+            <a href="pay.html"><input type="submit" value="Submit" id="submit"></a>
+          </p></td>
+        </tr>
+      </table>
+	   	<!-- JavaScript code for validate doctors dropdownlist -->
+	 <script>
+		var submitbutton=document.getElementById("submit");
+		submitbutton.addEventListener("click", validate_docDropdownList);
+		
+		function validate_docDropdownList(){
+			var doctor = document.getElementById("doctor-selection").value;
+			if(doctor=="Select Doctor"||doctor=="All Doctors"){
+				alert(doctor+" is not a Doctor. Please select a doctor. ");
+				return false;
+
+			}
+		}
+	</script>
+</form>
+
+
+</body>
+</html>

@@ -1,0 +1,584 @@
+body {
+	
+	font-size: 16px;
+	font-family: 'Lato', sans-serif;
+	font-weight: 300;
+	color: #4EA8DE;
+  
+  margin: 0;
+	padding: 0;
+	font-family: Arial, sans-serif;
+	background-color: #4EA8DE;
+}
+
+/* Login and Sign up */
+
+h1#title {
+	font-family: 'Roboto Slab', serif;
+	font-weight: 300;
+	font-size: 3.0em;
+	color: #5390D9;
+	text-shadow: 0 0 10px #fefefe;
+	margin: 0 auto;
+	padding-top: 100px;
+	max-width: 600px;
+	text-align: center;
+	position: relative;
+	top: 0px;
+}
+
+h1#title span span {
+	font-weight: 400;
+}
+
+h2 {
+	text-transform: uppercase;
+	color: white;
+	font-weight: 400;
+	letter-spacing: 1px;
+	font-size: 1.4em;
+	line-height: 2.8em;
+}
+
+a {
+	text-decoration: none;
+	color: #666;
+}
+
+a:hover {
+	color: #aeaeae;
+}
+
+p.small {
+	font-size: 0.8em;
+	margin: 20px 0 0;
+}
+
+
+
+.container {
+	margin: 0;
+	
+}
+
+.top {
+	margin: top 10px;
+	padding: 0;
+	width: 100%;
+	background: -moz-linear-gradient(top,  #4EA8DE 0%, rgba(240, 240, 240, 0) 40%); /* FF3.6-15 */
+	background: -webkit-linear-gradient(top,  #4EA8DE 0%,rgba(0,0,0,0) 40%); /* Chrome10-25,Safari5.1-6 */
+	background: linear-gradient(to bottom,  #4EA8DE 0%,rgba(245, 0, 212, 0) 40%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#99000000', endColorstr='#00000000',GradientType=0 ); /* IE6-9 */
+}
+
+
+.login-box {
+	background-color: white;
+	max-width: 340px;
+	margin: 0 auto;
+	position: relative;
+	top: 10px;
+	padding-bottom: 30px;
+	border-radius: 5px;
+	box-shadow: 0 1px 30px #48BFE3;
+	text-align: center;
+}
+
+.login-box .box-header {
+	background-color: #48BFE3;
+	margin-top: 0;
+	border-radius: 5px 5px 0 0;
+}
+
+.login-box label {
+	font-weight: 700;
+	font-size: .8em;
+	color: #888;
+	letter-spacing: 1px;
+	text-transform: uppercase;
+	line-height: 2em;
+}
+
+.login-box input {
+	margin-bottom: 20px;
+	padding: 8px;
+	border: 1px solid #ccc;
+	border-radius: 2px;
+	font-size: .9em;
+	color: #888;
+}
+
+.login-box input:focus {
+	outline: none;
+	border-color: #48BFE3;
+	transition: 0.5s;
+	color: #48BFE3;
+}
+
+.login-box button {
+	margin-top: 0px;
+	border: 0;
+	border-radius: 2px;
+	color: white;
+	padding: 10px;
+	text-transform: uppercase;
+	font-weight: 400;
+	font-size: 0.7em;
+	letter-spacing: 1px;
+	background-color: #48BFE3;
+	cursor:pointer;
+	outline: none;
+}
+
+.login-box button:hover {
+	opacity: 0.7;
+	transition: 0.5s;
+}
+
+.login-box button:hover {
+	opacity: 0.7;
+	transition: 0.5s;
+}
+
+.selected {
+	color: #4EA8DE!important;
+	transition: 0.5s;
+}
+
+/* Animation Delay 
+#logo {
+  -webkit-animation-duration: 1s;
+  -webkit-animation-delay: 2s;
+}
+
+.login-box {
+  -webkit-animation-duration: 1s;
+  -webkit-animation-delay: 1s;
+}*/
+
+/*slidshow*/
+
+* {box-sizing: border-box}
+body {font-family: Verdana, sans-serif; margin:0}
+.mySlides {display: none}
+img {viewport-fit:contain;}
+
+/* Slideshow container */
+.slideshow-container {
+  max-width: 1300px;
+  position: relative;
+  margin:auto;
+  margin-bottom: 1px;
+  
+}
+
+/* Next & previous buttons */
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  padding: 16px;
+  margin-top: -22px;
+  color: rgb(9, 9, 9);
+  font-weight:bolder;
+  font-size: 20px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+  background-color: #533287;
+}
+
+/* Caption text */
+.text {
+  color: #f4fbff;
+  font-weight: 800;
+  font-size: 15px;
+  padding: 1px 12px;
+  position: absolute;
+  bottom: 26px;
+  width: 100%;
+  text-align: center;
+}
+
+/* The dots/bullets/indicators */
+
+
+.active, .dot:hover {
+  background-color: #56CFE1;
+  height: auto;
+  margin-bottom: 1px;
+  padding: auto;
+}
+
+/* Fading animation */
+.fade {
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+/* On smaller screens, decrease text size */
+@media only screen and (max-width: 300px) {
+  .prev, .next,.text {font-size: 11px}
+}
+
+/*video area*/
+
+#video-container {
+	margin-top: 10px;
+  margin-right: 45px;
+    width: 640px;
+    height: 360px;
+    position: relative; 
+    overflow: hidden;
+    border-radius: 25px;
+    
+  }
+
+  #my-video {
+    
+    width: 700px;
+    height: auto;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    overflow: hidden;
+    border-radius: 25px;
+  }
+
+  #play-button {
+    position:absolute;
+    margin-left: 45%;
+    background-color: #3a9afb;
+    color: #ffffff;
+    border-color: rgb(194, 194, 194);
+    
+    
+  }
+
+/*search area*/
+
+.search {
+  
+  margin-left: 10px;
+  position: relative;
+	width: 700px;
+  height: 340px;
+	padding: 20px;
+	text-align: center;
+	border: 2px solid #6930C3;
+	background-color: #a1e1ee;
+	border-radius: 10px;
+  
+}
+
+h2 {
+	font-size: 18px;
+	margin-bottom: 1px;
+	color: #300067;
+	text-shadow: 2px 2px 2px #ccc;
+}
+
+form {
+	display: inline-block;
+	position: relative;
+  margin-top: 1px;
+}
+
+form label {
+	display: block;
+	font-size: 16px;
+	margin-bottom: 10px;
+	color: #300067;
+	text-shadow: 1px 1px 1px #ccc;
+}
+
+form select {
+	width: 100%;
+	padding: 10px;
+	border: none;
+	border-radius: 5px;
+	box-shadow: 2px 2px 2px #ccc;
+	background-color: #fff;
+	color: #333;
+	font-size: 16px;
+	margin-bottom: 10px;
+}
+
+form input[type="submit"] {
+	background-color: #3a9afb;
+	color: #fff;
+	padding: 10px 20px;
+	border: none;
+	border-radius: 5px;
+	font-size: 18px;
+	cursor: pointer;
+	box-shadow: 2px 2px 2px #ccc;
+}
+
+form input[type="submit"]:hover {
+	background-color: #6930C3;
+	box-shadow: 4px 4px 4px #f900d8;
+	transform: scale(1.1);
+	transition: all 0.3s ease-in-out;
+}
+
+form:before {
+	content: '';
+	position: absolute;
+	top: -5px;
+	left: -5px;
+	right: -5px;
+	bottom: -5px;
+	border-radius: 10px;
+	box-shadow: 2px 2px 2px #ccc;
+	z-index: -1;
+	background-color: #f9e8d8;
+}
+
+/*footer area*/
+footer
+{
+    position: relative;
+    margin-top: 20%;
+    width: 100%;
+    background: #48BFE3;
+    height: 25%;
+    padding: 70px 100px;
+    display: flex;
+}
+footer div
+{
+    text-align: center;
+}
+footer .col-2
+{
+    flex-grow: 2;
+}
+footer div h4
+{
+    font-weight: 500;
+    margin-bottom: 30px;
+    letter-spacing: 1px;
+	  color: #350085;
+    text-shadow: 1px 1px 1px #1c0048;
+}
+footer .col-1 a
+{
+    display: block;
+    font-weight: 550;
+    text-decoration: none;
+    color: #efefef;
+    margin-bottom: 2px;
+}
+footer div form input
+{
+    width: 400px;
+    height: 45px;
+    border-radius: 4px;
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 40px;
+    outline: none;
+    border: none;
+}
+
+footer div form button
+{
+    background: #6930C3;
+    font-weight: 550;
+    border: 2px solid #6930C3;
+    color: #f3f3f3;
+    border-radius: 30px;
+    padding: 10px 30px;
+    font-size: 15px;
+    cursor: pointer;
+}
+.social-icons
+{
+    margin-top: 30px;
+    color: #efefef;
+    
+}
+.social-icons i
+{
+    font-size: 22px;
+    margin: 10px;
+    cursor: pointer;
+}
+footer div p
+{
+    display: block;
+    text-decoration:double;
+    color: #f0f0f0;
+    margin-bottom: 15px;
+}    
+footer .wave
+{
+    position: absolute;
+    top: -100px;
+    left: 0;
+    width: 100%;
+    height: 100px;
+    background: url(wave1.png);
+    background-size: 1200px 100px;
+}
+footer .wave#wave1
+{
+    z-index: 1000;
+    opacity: 1;
+    bottom: 0;
+    animation: animateWave 4s linear infinite;
+}
+footer .wave#wave2
+{
+    z-index: 999;
+    opacity: 0.5;
+    bottom: 10px;
+    animation: animateWave_02 4s linear infinite;
+}
+footer .wave#wave3
+{
+    z-index: 1000;
+    opacity: 0.2;
+    bottom: 15;
+    animation: animateWave 3s linear infinite;
+}
+footer .wave#wave4
+{
+    z-index: 999;
+    opacity: 0.7;
+    bottom: 20px; 
+    animation: animateWave_02 3s linear infinite;
+}
+@keyframes animateWave
+{
+    0%
+    {
+        background-position-x: 1000px;
+    }
+    100%
+    {
+        background-position-x: 0px;
+    }
+}
+@keyframes animateWave_02
+{
+    0%
+    {
+        background-position-x: 0px;
+    }
+    100%
+    {
+        background-position-x: 1000px;
+    }
+}
+
+/*icons style*/
+
+.card
+{   
+    width: 250px;
+    height: 250px;
+    display: inline-block;
+    border-radius: 10px;
+    padding: 50px 50px;
+    box-sizing: border-box;
+    cursor: pointer;
+    margin: 30px 100px;
+    justify-items: space-between;
+    background-position: center;
+    background-size: cover;
+    transition: transform 0.5s;
+}
+.card1
+{
+    background-image: url(app11.jpg);
+}
+.card2
+{
+    background-image: url(video11.jpg);
+}
+.card3
+{
+    background-image: url(emer11.jpg);
+}
+.card:hover
+{
+    transform: translateY(-10px);
+}
+.button
+{   border: none;
+    box-shadow: 2px 2px 2px #9900ff;
+    background-color: #7e13e9;
+    position: relative;
+    padding: 10px 30px;
+    margin: 20px 125px;
+    justify-content: center;
+    color: white;
+    border-radius: 20px;
+    cursor: pointer;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 14px;
+    animation: btn-click 0.3s ease-out;
+  }
+
+    .button:hover {
+      background-color: #6930C3;
+      box-shadow: 4px 4px 4px #4EA8DE;
+      transform: scale(1.1);
+      transition: all 0.3s ease-in-out;
+    }
+
+
+.col
+{
+    text-align: center;
+    background-position: center;
+    background-size: cover;
+    transition: transform 0.5s;
+    justify-content: space-between;
+}
+
+.col2 
+{
+  text-align: center;
+  background-position: center;
+  background-size: cover;
+  transition: transform 0.5s;
+  margin: 30px 100px;
+  justify-content: center;
+  
+}
+
+
+
+@keyframes btn-click {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(0.9);
+  }
+  100% {
+    transform: scale(1);
+  }
+}

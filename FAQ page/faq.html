@@ -1,0 +1,347 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+ 
+
+  <title>FAQ Page</title>
+  <style>
+		
+		/* Navigation bar*/
+		nav {
+			background-color: #6930C3;
+            display: flex;
+			position: relative;
+            justify-content: center;
+            align-items: center;
+			color: #fff;	   
+			/*justify-content: space-between;*/
+			padding: 25px;
+			box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3);
+		}
+
+		nav a {
+			color: #fff;
+			text-decoration: none;
+            margin-left: 0;
+			margin-right: 20px;
+			font-weight: bold;
+			padding: 20px;
+			border-radius: 5px;
+			box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.3);
+			transition: all 0.3s ease;
+		}
+
+		nav a:hover {
+			background-color: #fff;
+			color: #554d3e;
+			transform: translateY(-5px);
+			box-shadow: 0px 5px 5px rgba(0, 0, 0, 0.3);
+		}
+		
+		.navigation { 
+			
+			padding: 0px;
+			margin-top: 1px;
+			position:relative; }
+
+      *{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root{
+    /* Primary Text */
+    --Very-dark-desaturated-blue: hsl(238, 29%, 16%);
+    --Soft-blue-light: hsl(189, 100%, 43%);
+    /* Background Color */
+    --Soft-violet: hsl(203, 69%, 59%);
+    --Soft-blue: hsl(189, 56%, 49%);
+    /*  Neutral Text (content) */
+    --Very-dark-grayish-blue: hsl(237, 12%, 33%);
+    --Dark-grayish-blue: hsl(240, 6%, 50%);
+    /* Dividers */
+    --Light-grayish-blue: hsl(240, 5%, 91%);
+}
+
+html{
+    font-size: 20px;
+    font-family: 'Kumbh Sans', sans-serif;
+    scroll-behavior: smooth;
+}
+
+body{
+    height: 130vh;
+    background-image: linear-gradient(var(--Soft-violet),var(--Soft-blue));
+    background-repeat: no-repeat;
+    font-size: 18px;
+	font-family: 'Lato', sans-serif;
+	font-weight: 300;
+    background-color: #eafdff;
+     margin: 0;
+	padding: 0;
+	font-family: Arial, sans-serif;
+}
+
+.main-container {
+    display: flex;
+    margin-top: 100px;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 70%;
+    padding: 30px 0;
+    background-color: white;
+    border-radius: 20px;
+    box-shadow: 0 35px 30px -30px rgb(85 83 83);
+    background-image: url(bg-pattern-desktop.svg);
+    background-size: 90%;
+    background-repeat: no-repeat;
+    background-position: -457px -250px;
+}
+
+.faq ,.illustration_image{
+    flex: 1;
+}
+
+.illustration_image{
+    display: flex;
+    align-items: center;
+    overflow: hidden;
+    position: relative;
+}
+
+.illustrator_box{
+    display: block;
+    position: absolute;
+    transform: translateX(-50%) translateY(85%);
+    z-index: 1;
+}
+
+.desk-img{
+    transform: translateX(-17%);
+    margin-left: auto;
+    margin-top: auto;
+}
+
+.mob-img{
+    display: none;
+    height: 120px;
+}
+
+.faq{
+    padding: 30px 30px;
+}
+
+.faq h1{
+    text-transform: uppercase;
+    font-size: 30px;
+    padding-bottom: 35px;
+
+}
+
+
+.items{
+    font-size: 15px;
+    padding-right: 80px;
+
+}
+
+
+.item{
+    border-bottom:var(--Light-grayish-blue) 1px solid;
+    padding:10px 10px 10px 0;    
+}
+
+.item-link{
+    text-decoration: none;
+    color: black;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 0;
+    transition: 0.2s;
+}
+
+.item-link:hover{
+    color: var(--Soft-blue-light);
+}
+
+.answer{
+    max-height: 0;
+    overflow: hidden;
+    position: relative;
+    transition: max-height 1s;
+
+    color: var(--Dark-grayish-blue);
+    font-size: 12px;
+    line-height: 20px;
+
+}
+
+.item:target .answer{
+    max-height: 100px;
+    padding: 5px 0;
+}
+
+.item:target .item-link{
+    font-weight: 700;
+} 
+
+.item:target .arrow img{
+    transform: rotate(180deg);
+    transition: transform 0.6s ease-in-out;
+}
+
+
+@media (max-width: 1155px) {
+  
+    .desk-img{
+        display: none;
+    }
+
+    .illustrator_box{
+        display: none;
+    }
+
+    .mob-img{
+        display: block;
+        position: relative;
+        left: -6px;
+        top: 23px;
+        margin: 0 auto;
+    }
+
+    .illustration_image{
+        overflow: visible;
+        height: 0;
+
+    }
+
+    .main-container{
+        background-image: none;
+        display: block;
+        margin-top: 180px;
+    }
+
+    .items {
+        padding-right: 0;
+    }
+
+    .answer p{
+        padding-right: 50px;
+    }
+
+    .faq h1{
+        text-align: center;
+    }
+
+    .faq {
+        padding-top: 90px;
+    }
+  }
+  </style>
+</head>
+
+<body>
+  <nav>
+    <div class="navigtion">
+        <a href="../Index.html">Home</a>
+        <a href="../channel/Chanaling_home.html">Channeling</a>
+        <a href="../Lab Test/labtest.html">Lab Test</a>
+        <a href="../contact/contactus.html">Contact Us</a>
+        <a href="../login.html">Login</a>
+        <a href="../Signup.html">Register</a>
+    </div>
+</nav>
+
+  <div class="main-container">
+    
+
+    <!-- @ illustrator box -->
+    <div class="illustrator_box">
+      <img src="illustration-box-desktop (1).svg">
+    </div>
+
+    <!-- illustration image -->
+    <div class="illustration_image">
+      <img class="mob-img" src="Question.png">
+      <img class="desk-img" src="Question.png">
+    </div>
+
+    <div class="faq">
+      <h1>faq</h1>
+      <div class="items">
+
+        <!-- Q1 -->
+        <div class="item" id="q1">
+          <a class="item-link" href="#q1">What is eChannelling ?
+            <i class="arrow"><img src="icon-arrow-down.svg" alt=""></i>
+          </a>
+          <div class="answer">
+            <p> eChannelling is a service that offers convenient booking facilities 
+                for Doctor Appointments at island wide prominent hospitals in Sri Lanka.</p>
+          </div>
+        </div>
+
+        <!-- Q2 -->
+        <div class="item" id="q2">
+          <a class="item-link" href="#q2"> How can I use the Doctor booking service through eChannelling?
+            <i class="arrow"><img src="icon-arrow-down.svg" alt=""></i></a>
+          <div class="answer">
+            <p><ul>
+                <li>Call <b>+94 753178064</b> from any mobile network  to channel your doctor.</li>
+                <li>Visit <b>SLEdoctor.lk</b></li>
+                <li>Download the <b>eChannelling</b> mobile app from Google play store or App Store</li>
+                <li>Visit Banks islandwide (Refer Banks)</li>
+                </ul>
+            </p>
+          </div>
+        </div>
+
+        <!-- Q3 -->
+        <div class="item" id="q3">
+          <a class="item-link" href="#q3">How to download eChannelling Mobile Application?
+            <i class="arrow"><img src="icon-arrow-down.svg" alt=""></i></a>
+          <div class="answer">
+            <p>The Mobile Application can be downloaded via Google play store or App store.</p>
+          </div>
+        </div>
+
+        <!-- Q4 -->
+        <div class="item" id="q4">
+          <a class="item-link" href="#q4">How do I search a doctor using eChannelling?
+            <i class="arrow"><img src="icon-arrow-down.svg" alt=""></i></a>
+          <div class="answer">
+            <p><h3>You can use any one option below</h3>
+                <ul>
+                    <li>Option 01 : Type the doctor's first name and search OR</li>
+                    <li>Option 02 : Select the available hospital and search </li>
+                </ul>
+            </p>
+          </div>
+        </div>
+
+        <!-- Q5 -->
+        <div class="item" id="q5">
+          <a class="item-link" href="#q5">How to book an appointment with a doctor?
+            <i class="arrow"><img src="icon-arrow-down.svg" alt=""></i></a>
+          <div class="answer">
+            <p>Select the preferred date (required session) of the doctor Enter patient details Select 
+                the preferred payment method and proceed. You have maximum of 10 minutes to complete. </p>
+          </div>
+        </div>
+        
+      </div>
+    </div>
+  </div>
+  
+</body>
+
+</html>

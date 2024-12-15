@@ -1,0 +1,404 @@
+<html>
+<head>
+    
+    
+    <script src="vali.js"></script>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <style>
+
+        /* Navigation bar*/
+nav {
+	background-color: #6930C3;
+	display: flex;
+	position: relative;
+	justify-content: center;
+	align-items: center;
+	color: #fff;	   
+	z-index:1;
+	padding: 25px;
+	box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3);
+}
+
+nav a {
+	color: #fff;
+	text-decoration: none;
+	margin-left: 0;
+	margin-right: 20px;
+	font-weight: bold;
+	padding: 20px;
+	border-radius: 5px;
+	box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.3);
+	transition: all 0.3s ease;
+}
+
+nav a:hover {
+	background-color: #fff;
+	color: #554d3e;
+	transform: translateY(-5px);
+	box-shadow: 0px 5px 5px rgba(0, 0, 0, 0.3);
+}
+
+.navigation { 
+	
+	padding: 0px;
+	margin-top: 1px;
+	position:relative;
+	
+}
+
+    body {
+	
+	font-size: 18px;
+	font-family: 'Lato', sans-serif;
+	font-weight: 300;
+    background-color: #eafdff;
+     margin: 0;
+	padding: 0;
+	font-family: Arial, sans-serif;
+	
+   }
+    
+   .border-all{
+    border:15px solid ;
+    border-color:rgb(78,168,222);
+    /*box-shadow: inset 0 0 50px #fff,       inner white 
+                 inset 10px 0 0px #48BFE3,   inner left magenta short 
+                    inset -10px 0 0px #0ff,   inner right cyan short 
+                 inset 10px 0 80px #48BFE3,  inner left magenta broad 
+                 inset -10px 0 80px #0ff;  inner right cyan broad 
+    */
+    
+                            
+                          
+                      
+}
+.about{
+            
+    font-family:"Open Sans";
+    color:rgb(10, 59, 138);
+    font-weight:bold;
+    font-size:80px;
+    font-weight:bold;
+    margin-top:40px;
+    margin-bottom:10px;
+    padding-top:100px;
+    padding-left:20px;
+  
+    
+    
+
+
+} 
+.deliver{
+
+    font-family:"Open Sans";
+    font-size:18pt;
+    width:600px;
+    padding-left:20px;
+}
+.about-div{
+    position:relative;
+    z-index:0;
+    display:grid;
+    grid-template-columns: 1fr 600px;
+    padding-top:0px;
+}
+
+.img3{
+    width:600px;
+    height:600px;
+    object-fit:cover;
+    border-radius: 300px;
+}
+.line{
+           
+    position: absolute;
+    bottom:10px;
+    background-color:#48BFE3;
+    width:100%;
+    height:100px;}
+    
+.header{
+        position: absolute;
+        top:0px;
+        z-index: 1;
+        background-color: #48BFE3;
+        height:100px;
+        width: 100%;
+    }
+
+
+
+.main1{
+    display:flex;
+    font-family:'Open Sans', sans-serif;
+    margin-bottom:10px;
+    justify-content: center;
+    
+
+}
+
+
+
+.img1{
+    width:50px;
+    height:50px;
+    object-fit:cover;
+    border-radius:25px;
+
+}
+.text-div{
+
+    display: flex;
+    box-shadow: 0px 0px 3px #5b5959;
+    padding: 30px 30px 30px 30px;
+    margin: 30px 30px 30px 30px;
+    align-items: center;
+    border-radius:10px;
+    
+
+}
+
+.high{
+    color:rgb(53, 79, 247);
+    font-size:20px;
+    font-weight: bold;
+}
+.text-small{
+    font-size: 12px;
+    color: rgb(11, 108, 243);
+}
+.text-mar{
+
+    margin-left:20px;
+    line-height: 35px;
+}
+
+.btn{
+    
+    font-size:15px;
+    font-weight: bold;
+    color:#006fba;
+    border-color: #006fba;
+    border-style:solid;
+    border-radius:10px;
+    transition: background-color 1s ;
+}
+.btn:hover{
+
+    background-color:#006fba;
+    color: white;
+}
+
+.second{
+    
+   box-shadow: 0px 0px 5px #5b5959;
+   margin-top: 33px;
+   margin-left:200px;
+
+
+}
+.middle{
+    margin: 10px 10px 10px 10px;
+    display:flex;
+    flex-direction: row;
+
+    
+    justify-content: center;
+    
+    
+    
+
+
+}
+.call{
+    
+    position: absolute;
+    top:0px;
+    right:400px;
+    display: grid;
+    grid-template-columns: 50px 100px;
+    row-gap: 10px;
+    
+   
+
+
+}
+
+
+
+
+.call-div{
+    flex:1;
+    position: relative;
+    font-size:20px;
+
+    
+}
+.form-div{
+    width:600px;
+	padding:60px 60px 60px 60px;
+    
+    
+}
+.text-name{
+
+    width:600px;
+    height:30px;
+    border:1px solid;
+    border-radius:5px;
+    border-color: rgb(182, 172, 172);
+    margin-bottom:20px;
+
+}
+textarea{
+
+    width:600px;
+    height:200px;
+}
+
+.btn{
+    padding:10px 30px 10px 30px;
+    font-size:15px;
+    font-weight: bold;
+    color:#006fba;
+    border-color: #006fba;
+    border-style:solid;
+    border-radius:10px;
+    transition: background-color 1s ;
+    margin-top:10px;
+}
+.btn:hover{
+
+    background-color:#006fba;
+    color: white;
+}
+
+    </style>
+</head>
+<body>
+
+    <nav>
+        <div class="navigtion">
+            <a href="../Index.html">Home</a>
+            <a href="../channel/Chanaling_home.html">Channeling</a>
+            <a href="../Lab Test/labtest.html">Lab Test</a>
+            <a href="../contact/contactus.html">Contact Us</a>
+            <a href="../login.html">Login</a>
+            <a href="../Signup.html">Register</a>
+        </div>
+    </nav>
+    <div class="border-all">
+    <div class="about-div">
+        
+        <div >
+        <p class="about">Contact Us</p>
+        <p class="deliver"> We will take care form here Contact us</p>
+        </div>
+        <div>
+            
+            <img class="img3" src="img/1.jpg">
+
+           
+    </div>
+    <div class="header"></div>
+    <div class="line">
+        
+    </div>
+    </div>
+
+
+    
+ <div class="main1">
+
+<div class="border1">
+    <div class="text-div">
+        <div>
+            <img class="img1" src="img/call.jpg">
+        </div>
+
+        <div class="text-mar">
+            <div>call us directly at</div>
+            <div class="high">+94 1 512 4400</div>
+            <div class="text-small">See all number and location</div>
+        </div>
+    </div>
+
+    <div class="text-div">
+        <div >
+            <img class="img1" src="img/chat.jpg">
+        </div>
+
+        <div class="text-mar">
+            <div></div>
+            <div>Chat with us over sales team</div>
+            <div><button class="btn">Chat with us</button></div>
+        </div>
+    </div>
+    
+</div>
+
+<div class="second">
+   
+    <div class="middle">
+    
+                <div class="form-div">
+                <form name="myform" action="#" onsubmit="return sahan()" method="post">
+                <lable>Name</lable><br>
+                <input class="text-name" id="nameid"  type="text"  required="" pattern="[A-Za-z\s]+"
+                title="Not Valid" ><br>
+                
+                <lable>Email</lable><br>
+                <input class="text-name" id="emailid" type="text" required="" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,3}$"><br>
+    
+                <lable>Phone number</lable><br>
+                <input class="text-name" id="number" type="text" required="" pattern="[0-9]+"   minlength="10" maxlength="10" title="Not valid" ><br>
+    
+                <lable>Subject</lable><br>
+                <select class="text-name"><br>
+    
+                    <option>Patient enquiry</option>
+                    <option>General enquiry</option>
+                    <option>Employment enquiry</option>
+    
+                </select><br>
+    
+                <lable>Message</lable><br>
+                <textarea></textarea><br>
+                
+                <input class="btn" type="submit">
+                </form>
+    
+                
+                
+                
+                </div>
+    
+    
+                
+                
+           
+        </div>
+</div>
+
+</div>
+
+</div>
+
+
+
+
+
+
+
+    
+    
+
+
+
+</body>
+
+
+
+</html>

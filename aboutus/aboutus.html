@@ -1,0 +1,786 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        
+   <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+   
+   <style>
+
+/* Navigation bar*/
+nav {
+	background-color: #6930C3;
+	display: flex;
+	position: relative;
+	justify-content: center;
+	align-items: center;
+	color: #fff;	   
+	z-index:1;
+	padding: 25px;
+	box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3);
+}
+
+nav a {
+	color: #fff;
+	text-decoration: none;
+	margin-left: 0;
+	margin-right: 20px;
+	font-weight: bold;
+	padding: 20px;
+	border-radius: 5px;
+	box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.3);
+	transition: all 0.3s ease;
+}
+
+nav a:hover {
+	background-color: #fff;
+	color: #554d3e;
+	transform: translateY(-5px);
+	box-shadow: 0px 5px 5px rgba(0, 0, 0, 0.3);
+}
+
+.navigation { 
+	
+	padding: 0px;
+	margin-top: 1px;
+	position:relative;
+	
+}
+
+    body {
+	
+	font-size: 18px;
+	font-family: 'Lato', sans-serif;
+	font-weight: 300;
+    background-color: #eafdff;
+     margin: 0;
+	padding: 0;
+	font-family: Arial, sans-serif;
+	
+   }
+
+   p{
+    margin:0;
+ }
+ img{
+    width:400px;
+    height:400px;
+    object-fit:cover;
+    border-radius: 300px;
+    
+}
+.border-all{
+    border:15px solid ;
+    border-color:rgb(78,168,222);
+    /*box-shadow: inset 0 0 50px #fff,       inner white 
+                 inset 10px 0 0px #48BFE3,   inner left magenta short 
+                    inset -10px 0 0px #0ff,   inner right cyan short 
+                 inset 10px 0 80px #48BFE3,  inner left magenta broad 
+                 inset -10px 0 80px #0ff;  inner right cyan broad 
+    */                                                                 
+}
+    
+
+.about-div{
+    position:relative;
+    z-index:0;
+    display:grid;
+    grid-template-columns: 1fr 600px;
+    padding-top:0px;
+     
+
+}
+ 
+ .about{
+            
+            font-family:"Open Sans";
+            color:rgb(10, 59, 138);
+            font-weight:bold;
+            font-size:80px;
+            font-weight:bold;
+            margin-top:40px;
+            margin-bottom:10px;
+            padding-top:100px;
+            padding-left:20px;
+          
+            
+        } 
+        .deliver{
+
+            font-family:"Open Sans";
+            font-size:15pt;
+            width:600px;
+            padding-left:20px;
+            
+        }
+        .img3{
+            width:600px;
+            height:600px;
+            object-fit:cover;
+           
+            
+    
+        }
+        .header{
+            position: absolute;
+            top:0px;
+            z-index: 1;
+            background-color:#48BFE3;
+            height:100px;
+            width: 100%;
+            
+        }
+      
+         .line{
+           
+            position: absolute;
+            bottom:10px;
+            background-color:#48BFE3;
+            width:100%;
+            height:100px;
+         }
+
+         .content{
+            display:flex;
+            flex-direction: row;
+            align-items: center;
+            justify-content: center;
+            margin-top:50px;
+            margin-bottom: 60px;
+            
+        
+            
+
+        }
+         .overview{
+            font-family:"Open Sans";
+            font-size:30px;
+            color:rgb(10, 59, 138);
+            font-weight:bold;
+            
+         }
+         .text{
+          
+                font-family:Open Sans,sans-serif;
+                margin:5px 5px 25px 0px;
+                text-align: justify;
+                line-height: 35px;
+                font-size:px;
+                font-weight: 100;
+
+               }
+        .text-div{
+
+            width:930px;
+        
+            
+        }
+        .content1{
+            display:grid;
+            grid-template-columns: 900px  600px;
+            padding:10px 10px 10px 10px;
+            margin-left:4px;
+            margin-right:4px;
+            
+            
+            margin-bottom:20px;
+            
+            
+            background-color: rgb(183, 135, 243);
+            border-radius:25% 10%;
+            transition: background-color 2s;
+        }
+   
+        .careers-div{
+
+            margin-top:60px;
+            margin-left:30px;
+            width:400px;
+            
+
+
+        }
+        .button-viewlist{
+        
+            font-size:15px;
+            font-weight: bold;
+            color: rgb(249, 249, 249);
+            box-shadow: 0 0 1px rgb(13, 117, 253);
+            border:none;
+           
+            background-color:#7e13e9;
+            
+            transition: background-color 1s ;
+           
+            
+            
+            border-radius: 15px;
+            letter-spacing: 0.1px;
+            padding:10px 20px 10px 20px;
+            cursor: pointer;
+            margin-left: 250px;
+            margin-bottom:24px;}
+        .button-viewlist:hover{
+
+            background-color:white;
+           color: #000000;
+            border-color: #000000;
+        }
+        
+
+        
+        .centres-space{
+            display:flex;
+           
+            position:relative;
+            width:100%;
+            height: 200px;
+            
+            font-family:'Open Sans',  sans-serif;
+            
+            color:rgb(89, 112, 245);
+            font-weight:bold;
+            font-size:40px;
+            font-weight:bold;
+            margin-top:40px;
+            margin-bottom:100px;
+            
+            
+        }
+     
+
+        .our{
+            position:absolute;
+            top:130px;
+            
+        }
+        .our-centres{
+            position:relative;
+        }
+        .img4{
+            position:absolute;
+            width:200px;
+            height:10px;
+            margin-left:-10px;
+            z-index: -2;
+            top:45px;
+
+            
+            
+        }
+        
+ 
+/*bootem now*/
+        
+        .bottem{
+            justify-content: center;
+            display:grid;
+            grid-template-columns: 400px 400px 400px;
+            column-gap: 75px;
+            
+            
+        }
+        .border-medi{
+            display:flex;
+            flex-direction:column;
+            width:400px;
+            height:300px;
+            border-radius: 50px;
+            margin-left:6px;
+            margin-right:1px;
+            margin-bottom:6px;
+            
+            box-shadow: 0 0 10px rgb(18, 125, 240);
+           
+            }
+            .medi{
+                font-family:"Open Sans";
+                color:rgb(10, 59, 138);
+                font-weight:bold;
+                font-size:30px;
+                padding-top:20px;
+                margin-left:10px;
+                margin-bottom: 10px;
+                
+            }
+            .text1{
+
+                font-family:Open Sans,sans-serif;
+                line-height: 35px;
+                font-size:20px;
+                font-weight: 100;
+                margin-left:10px;
+            }
+    
+    
+            
+
+       
+        .botton-learn{
+
+            
+            color:#006fba;
+            border-color: #006fba;
+            border: none;
+            font-size:15px;
+            font-weight: bold;
+            /*border:1px solid;
+            border-color: rgb(182, 74, 228);*/
+            border-radius: 10px;
+            background-color: rgba(223, 226, 232, 0.9);
+            padding:10px 20px 10px 20px;
+            cursor: pointer;
+            margin-left: 250px;
+            margin-top:40px;
+            box-shadow: 0 0 2px black;
+            transition: background-color 2s; opacity: 2s; ;
+            
+        }
+        .botton-learn:hover {
+            background-color:#006fba;
+            color: rgb(246, 245, 245);
+            opacity: 0.9;
+            border:none;
+            
+           
+           
+            
+            
+            
+            /*border-top-left-radius:16px;
+            border-bottom-right-radius:16px;*/
+
+
+        }
+     
+
+     
+        .content2{
+
+            flex:1;
+            font-family:Open Sans,sans-serif;
+            padding-left:400px;
+            line-height: 30px;
+        }
+
+            
+        
+
+       
+
+        
+        .branch-div{
+
+            font-family:'Open Sans',  sans-serif;
+            font-size:30px;
+            color:rgb(10, 59, 138);
+            font-weight:bold;
+            padding-left:200px;
+            margin-top:2px;
+            
+        }
+
+
+        .border{
+            position:absolute;
+            bottom:50px;
+            height:10px;
+            width:200px;
+            
+            
+           
+        }
+
+/* footer of mine */
+
+
+
+
+.first-loc{
+
+    display:grid;
+    grid-template-columns: 400px 1fr;
+    font-family:'Open Sans', sans-serif;
+    justify-content: center;
+    box-shadow: 0 0 10px rgb(25, 108, 233);
+    margin-bottom:30px;
+    margin-top:20px;
+    margin-left:50px;
+    margin-right:50px;
+
+}
+.farrer-text{
+    padding-top:20px;
+    display:flex;
+    font-size:20px;
+    font-weight:bold;
+
+}
+.farrer{
+
+    font-weight: bold;
+    font-size:40px;
+    color: #006fba;
+}
+
+.farrer-text1{
+
+    width:400px;
+}
+.email{
+
+        display:flex;
+
+        
+        
+}
+.farrer-margin{
+
+    padding-left:40px;
+    padding-top:40px;
+}
+.email{
+    font-size:20px;
+    padding-top:90px;
+    font-family:'Open Sans', sans-serif;
+}
+
+.call{
+    display:grid;
+    grid-template-columns: 25px 1fr;
+    margin-left:60px;
+    line-height:40px;
+}
+.email-name{
+    margin-left:10px;
+    width:200px;
+}
+.btn-find{
+    margin-left:500px;
+    font-family:'Open Sans', sans-serif;
+    
+
+}
+.btn{
+    padding:15px 30px 15px 30px;
+    font-size:15px;
+    font-weight: bold;
+    color:#006fba;
+    border-color: #006fba;
+    border-style:solid;
+    border-radius:25px;
+    transition: background-color 1s ;
+}
+.btn:hover{
+
+    background-color:#006fba;
+    color: white;
+
+}
+          
+   </style>
+
+    </head>
+    <body>
+
+    
+        <nav>
+            <div class="navigtion">
+                <a href="../Index.html">Home</a>
+                <a href="../channel/Chanaling_home.html">Channeling</a>
+                <a href="../Lab Test/labtest.html">Lab Test</a>
+                <a href="../contact/contactus.html">Contact Us</a>
+                <a href="../login.html">Login</a>
+                <a href="../Signup.html">Register</a>
+            </div>
+        </nav>
+    <div class="border-all">
+        
+        <div class="about-div">
+        
+            <div >
+            <p class="about">About Us</p>
+            <p class="deliver">We have revolutionized the healthcare industry through infrastructure development and advancement of products and services. </p>
+            </div>
+            <div>
+                
+                <img class="img3" src="img/1.jpg">
+    
+               
+        </div>
+        <div class="header"></div>
+        <div class="line">
+            
+        </div>
+        </div>
+
+       
+
+        <div class="content">
+            <div class="overview-div">
+            <div><p class="overview">Overview</p></div>
+            <div class="text-div"><p class="text">
+                
+                We provides a holistic approach to care, aligning each stage of a patient’s life journey with the information and support they need from diagnosis, through to treatment and beyond.– Sri Lanka’s largest dedicated provider of Medical care, with a growing reach into Asia and New Zealand.</p>
+                <p class="text">
+                    We have a strong and prominent team of medical oncologists, specialist training and worked in world -renowned medical centres.
+                 </p>
+                 <p class="text">
+                    They are dedicated to delivering personalised, evidence-based treatment plans to support patients and their families through their treatment.
+                 </p>
+                 <p class="text">
+                    Our centres provide a friendly environment for our patients and their loved ones, combined with technology and evidence-based treatment options delivered by our caring medical team who are sensitive of the personal and cultural needs of our patients and their loved ones.we believe that treatment is a collaborative effort that requires the support of many people working towards one goal – to provide our patients with care and support every step of the way.</p>
+            </div>
+            </div>
+           
+            
+        </div>
+
+
+        <div class="content1">
+            <div class="careers-div"> <p class="overview">Careers</p>
+            
+            <div><p class="text">We committed to providing the best possible care to communities across SRi lanka and the ASEAN region.
+                If you are a motivated individual looking to join a supportive, values-driven team, we’d like to hear from you. 
+                <a href="#">Visit our</a>
+                </p>
+            </div>
+            </div>
+            <div class="careers-div"> <p class="overview">Partners</p>
+            <div class="text"><p>we have grown from four to seven clinics, extending beyond medical oncology to include haematology and radiation oncology services. 
+                we understand our patients and have developed a patient-centred, comprehensive approach to care.</p>
+            </div>
+            <button class="button-viewlist">View over list of location</button>
+            </div>
+        </div>
+
+       
+
+        
+
+    
+    <div class="centres-space">
+            
+            <div class="our"><p class="our-centres">Partners</p> <div class="border"><img class="img4" src="img/loc/icon.jpg"></div></div>
+           
+       
+    </div>
+
+
+    <div class="first-loc">
+        <div class="img-div">
+                <img class="loc" src="img/loc/1.jpg">
+        </div>
+        <div class="farrer-margin">
+            <div class="farrer"><p>Sri lanka National Hospital<p></div>
+                <div class="farrer-text">
+                    <div><i class="material-icons">&#xe55f;</i> </div>
+                    <div class="farrer-text1"><p>1WV99+FHX, Colombo 00700,Clock tower 04389 , Peak 34567</p></div>
+                    <div class="call">
+                    <div><i class="fa-solid fa-phone"></i></div>
+                    <div>+94 6911 1111</div>
+                    <div><i style="font-size:24px" class="fa">&#xf0f6;</i></div>
+                    <div>+94 6604 6966</div>
+                    </div>
+                </div>
+                 
+                 <div class="email">
+                 <div><i class="fa-solid fa-envelope"></i></div>
+                 <div class="email-name">peak@sledoctor.lk</div>
+                 <div class="btn-find"><button class="btn">Find out more</button></div>
+                </div>
+                 </div>
+        </div>
+
+
+
+
+
+        
+
+        <div class="first-loc">
+            <div class="img-div">
+                    <img class="loc" src="img/loc/4.jpg">
+            </div>
+            <div class="farrer-margin">
+                <div class="farrer"><p>Nawaloka Hosapital<p></div>
+                    <div class="farrer-text">
+                        <div><i class="material-icons">&#xe55f;</i> </div>
+                        <div class="farrer-text1"><p>3 Inazuma, #17-03/04 Medical Shogun, 228510, Sri lanka 228510</p></div>
+                        <div class="call">
+                        <div><i class="fa-solid fa-phone"></i></div>
+                        <div>+94 6737 8000</div>
+                        <div><i style="font-size:24px" class="fa">&#xf0f6;</i></div>
+                        <div>+94 6737 9149</div>
+                        </div>
+                    </div>
+                     
+                     <div class="email">
+                     <div><i class="fa-solid fa-envelope"></i></div>
+                     <div class="email-name">inzuma@sledoctor.lk</div>
+                     <div class="btn-find"><button class="btn">Find out more</button></div>
+                    </div>
+                     </div>
+                    </div>
+
+        
+
+
+            <div class="first-loc">
+                <div class="img-div">
+                        <img class="loc" src="img/loc/2.jpg">
+                </div>
+                <div class="farrer-margin">
+                    <div class="farrer"><p>Durdans Hospital<p></div>
+                        <div class="farrer-text">
+                            <div><i class="material-icons">&#xe55f;</i> </div>
+                            <div class="farrer-text1"><p>578 Elvitigala Mawatha,kurunagala 245,Athul Para,Aluthpara,Colombo 00500</p></div>
+                            <div class="call">
+                            <div><i class="fa-solid fa-phone"></i></div>
+                            <div>+94 6252 2202</div>
+                            <div><i style="font-size:24px" class="fa">&#xf0f6;</i></div>
+                            <div>+94 6252 2922</div>
+                            </div>
+                        </div>
+                         
+                         <div class="email">
+                         <div><i class="fa-solid fa-envelope"></i></div>
+                         <div class="email-name">nivi@sledoctor.lk</div>
+                         <div class="btn-find"><button class="btn">Find out more</button></div>
+                        </div>
+                         </div>
+                </div>
+
+
+
+                <div class="first-loc">
+                    <div class="img-div">
+                            <img class="loc" src="img/loc/3.jpg">
+                    </div>
+                    <div class="farrer-margin">
+                        <div class="farrer"><p>Rathnam Hospital<p></div>
+                            <div class="farrer-text">
+                                <div><i class="material-icons">&#xe55f;</i> </div>
+                                <div class="farrer-text1"><p>820 Sumeru, Medical Centre, Siharaja rain forest, Sri lanka 574623</p></div>
+                                <div class="call">
+                                <div><i class="fa-solid fa-phone"></i></div>
+                                <div>+94 6721 3470</div>
+                                <div><i style="font-size:24px" class="fa">&#xf0f6;</i></div>
+                                <div>+94 3163 1577</div>
+                                </div>
+                            </div>
+                             
+                             <div class="email">
+                             <div><i class="fa-solid fa-envelope"></i></div>
+                             <div class="email-name">sumeru@sledoctor.lk</div>
+                             <div class="btn-find"><button class="btn">Find out more</button></div>
+                            </div>
+                             </div>
+                    </div>
+
+
+
+                    <div class="first-loc">
+                        <div class="img-div">
+                                <img class="loc" src="img/loc/5.jpg">
+                        </div>
+                        <div class="farrer-margin">
+                            <div class="farrer"><p>Asiri Central Hospital<p></div>
+                                <div class="farrer-text">
+                                    <div><i class="material-icons">&#xe55f;</i> </div>
+                                    <div class="farrer-text1"><p>38 lilue, #08-36/37/38 Mt Sri lanaka Specialist Centre, Sri lanka 329563</p></div>
+                                    <div class="call">
+                                    <div><i class="fa-solid fa-phone"></i></div>
+                                    <div>+94 6266 2273</div>
+                                    <div><i style="font-size:24px" class="fa">&#xf0f6;</i></div>
+                                    <div>+94 6694 0739</div>
+                                    </div>
+                                </div>
+                                 
+                                 <div class="email">
+                                 <div><i class="fa-solid fa-envelope"></i></div>
+                                 <div class="email-name">Lilue@sledoctor.lk</div>
+                                 <div class="btn-find"><button class="btn">Find out more</button></div>
+                                </div>
+                                 </div>
+                        </div>
+
+
+                        <div class="mid-line-space"></div>
+
+                
+                        <div class="bottem">
+           
+                            <div class="border-medi">
+                                 
+                            <div>
+                                <p class="medi">Medical Concierge</p>
+                            </div>
+                
+                            <div>
+                                <p class="text1">Our medical Centre's support patients in the Asia Pacific region who
+                                     are seeking to travel for their  
+                                     treatment.</p>
+                            </div>
+                                
+                            <div>
+                                <button class="botton-learn">Learn more</button>
+                            </div>
+                            </div>
+                
+                
+                
+                            <div class="border-medi">
+                                <div  >
+                                    <p class="medi">Care team</p>
+                                </div>
+                    
+                                <div>
+                                    <p class="text1">Every member of our team is here to help. Here are some of the team members
+                                         you may meet and how they will be involved in your treatment.</p>
+                                </div>
+                                    
+                                <div>
+                                    <button class="botton-learn">Learn more</button>
+                            </div>
+                
+                
+                        </div>
+                        <div class="border-medi">
+                            <div >
+                                <p class="medi">Our doctors</p>
+                            </div>
+                
+                            <div>
+                                <p class="text1">We are bring together a strong and prominent team of medical oncologists,
+                                     radiation oncologists and haematologists. So we are happy too.</p>
+                            </div>
+                                
+                            <div>
+                                <button class="botton-learn">Learn more</button>
+                        </div>
+                    </div>
+                    </div>
+                    
+                
+        
+    </div>
+
+    
+
+    
+   
+    
+
+
+            
+
+
+
+
+
+
+
+    </body>
+</html>

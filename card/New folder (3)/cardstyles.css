@@ -1,0 +1,47 @@
+.card
+{
+    width: 250px;
+    height: 250px;
+    display: inline-block;
+    border-radius: 10px;
+    padding: 15px 25px;
+    box-sizing: border-box;
+    cursor: pointer;
+    margin: 10px 15px;
+    background-position: center;
+    background-size: cover;
+    transition: transform 0.5s;
+}
+.card1
+{
+    background-image: url(app11.jpg);
+}
+.card2
+{
+    background-image: url(video11.jpg);
+}
+.card3
+{
+    background-image: url(emer11.jpg);
+}
+.card:hover
+{
+    transform: translateY(-10px);
+}
+.button
+{
+    background-color: #48bfe3;
+    border: none;
+    position: absolute;
+    transform: translate(-50%, -50%);
+    top: 50%;
+    left: 50%;
+    padding: 20px 50px;
+    font-size: 30px;
+    font-weight: bold;
+    vertical-align: middle;
+}
+.col
+{
+    text-align: center;
+}

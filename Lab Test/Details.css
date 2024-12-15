@@ -1,0 +1,106 @@
+*{
+	box-sizing: border-box;
+}
+
+.ctrl_cnt{
+	display: inline-block;
+	width: 100%;
+	margin: 3px;
+	border: 1px solid black;
+	background: rgba(128, 0, 225, 0.7);
+}
+
+.dtlLbl{
+	height: 40vh;
+	background: cyan;
+	background-size: cover;
+	background-repeat: no-repeat;
+	color: #fff;
+	border: 1px solid black;
+	font-size: 19px;
+	color: black;
+}
+
+.dtlLbl ul{
+	list-style: square inside;
+	letter-spacing: 1px;
+	font-style: underline;
+}
+
+.tleLbls{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	background-size: cover;
+	background-position: center;
+	color: #fff;
+	position: relative;
+	transition: flex -4s ease;
+	padding: 20px;
+	background-size: cover;
+	background-repeat: no-repeat;
+	padding-right: 1px solid black;
+	font-size: 20px;
+	color: black;
+	text-align: center;
+}
+
+.nWTch{
+	background-image: url("tech.jpg");
+	margin-right: 20px;
+	width: 50vh;
+	height: 20vh;
+	display: inline-block;
+	background-color: blue;
+	background-size: cover;
+	background-repeat: no-repeat;
+	border-radius: 10px;
+	
+}
+
+.cusDmd{
+	background-image: url("cus.jpg");
+	margin-left: 20px;
+	margin-right: 20px;
+	width: 50vh;
+	height: 20vh;
+	display: inline-block;
+	background-color: green;
+	background-size: cover;
+	background-repeat: no-repeat;
+	border-radius: 10px;
+}
+
+.expCrw{
+	background-image: url("staff.jpg");
+	margin-left: 20px;
+	margin-right: 20px;
+	width: 50vh;
+	height: 20vh;
+	display: inline-block;
+	background-color: yellow;
+	background-size: cover;
+	background-repeat: no-repeat;
+	border-radius: 10px;
+}
+
+.tleLbls .nWTch:hover{
+    background: rgba(0, 206, 206, 0.5);
+	transition: 0.3s;
+	transform: scale(1.07);
+}
+
+.tleLbls .cusDmd:hover{
+    background: rgba(0, 206, 206, 0.5);
+	transition: 0.3s;
+	transform: scale(1.07);
+}
+
+.tleLbls .expCrw:hover{
+    background: rgba(0, 206, 206, 0.5);
+	transition: 0.3s;
+	transform: scale(1.07);
+}
+
+
+

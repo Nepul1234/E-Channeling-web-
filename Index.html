@@ -1,0 +1,342 @@
+<html>
+    <title>SL_EDcotor.lk</title>
+<head>
+    <link rel="stylesheet" href="Css/style.css" >
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+   
+<style>
+		
+    /* Navigation bar*/
+    nav {
+        background-color: #6930C3;
+        display: flex;
+        justify-content: center;
+        white-space: nowrap;
+        position: relative;
+        justify-content: center;
+        align-items: center;
+        color: #fff;	   
+        overflow: hidden;
+        padding: 25px;
+        box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3);
+    }
+
+    nav a {
+        color: #fff;
+        text-decoration: none;
+        margin-left: 0;
+        margin-right: 20px;
+        font-weight: bold;
+        padding: 20px;
+        border-radius: 5px;
+        box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.3);
+        transition: all 0.3s ease;
+    }
+
+    nav a:hover {
+        background-color: #fff;
+        color: #554d3e;
+        transform: translateY(-5px);
+        box-shadow: 0px 5px 5px rgba(0, 0, 0, 0.3);
+    }
+    
+    .navigation { 
+        
+        padding: 0px;
+        margin-top: 1px;
+        position:relative;
+    }
+
+
+    .content {
+    
+    margin: 15px;
+    padding: 10px;
+    background-color: #eafdff;
+    border: 1px solid #7e13e9;
+    
+    }
+
+    /* Slideshow styling */
+.slideshow {
+    align-items: center;
+    justify-content: center;
+    display: flex;
+	
+}
+
+/* Two column container */
+.container {
+	display: flex;
+	flex-wrap: wrap;
+	padding: 20px;
+    justify-content: center;
+   
+}
+
+.column-1 {
+display: flex;
+float: left;
+	
+}
+
+.column-2 {
+   
+	display: flex;
+    clear: right;
+    
+    float: right;
+	
+}
+
+
+
+/* Footer styling */
+.footer {
+    justify-content: center;
+	background-color: #eafdff;
+	padding: 20px;
+	text-align: center;
+    display: flex;
+}
+
+
+    </style>
+    </head>
+    <body>
+        <nav >
+            <div class="navigtion">
+                <a href="Index.html">Home</a>
+                <a href="channel/Chanaling_home.html">Channeling</a>
+                <a href="Lab Test/labtest.html">Lab Test</a>
+                <a href="contact/contactus.html">Contact Us</a>
+                <a href="login.html">Login</a>
+                <a href="Signup.html">Register</a>
+            </div>
+        </nav>
+      <div class="content">
+        
+<div class="slideshow-container">
+
+    <div class="mySlides fade">
+      <div class="numbertext">1 / 5</div>
+      <img src="Images/1.jpg" style="width:100%">
+      <div class="text"><a href="login.html"> Login Here</div>
+    </div>
+    
+    <div class="mySlides fade">
+      <div class="numbertext">2 / 5</div>
+      <img src="Images/2.jpg" style="width:100%">
+      <div class="text"><a href="channel/chanaling_home.html">Channell Here</div>
+    </div>
+    
+    <div class="mySlides fade">
+      <div class="numbertext">3 / 5</div>
+      <img src="Images/3.jpg" style="width:100%">
+      <div class="text"><a href="Lab Test/labtest.html">Our Lab Test </div>
+    </div>
+
+    <div class="mySlides fade">
+        <div class="numbertext">4 / 5</div>
+        <img src="Images/4.jpg" style="width:100%">
+        <div class="text"><a href="FAQ page/faq.html">FAQ</div>
+      </div>
+
+      <div class="mySlides fade">
+        <div class="numbertext">5 / 5</div>
+        <img src="Images/5.jpg" style="width:100%">
+        <div class="text"><a href="contact/contactus.html">Contact Us</div>
+      </div>
+    
+    <a class="prev" onclick="plusSlides(-1)">❮</a>
+    <a class="next" onclick="plusSlides(1)">❯</a>
+    
+    </div>
+    <br>
+    
+    <div style="text-align:center">
+      <span class="dot" onclick="currentSlide(1)"></span> 
+      <span class="dot" onclick="currentSlide(2)"></span> 
+      <span class="dot" onclick="currentSlide(3)"></span> 
+      <span class="dot" onclick="currentSlide(4)"></span> 
+      <span class="dot" onclick="currentSlide(5)"></span> 
+    </div>
+    <br> <br><br>
+    
+    <script>
+    let slideIndex = 1;
+    showSlides(slideIndex);
+    
+    function plusSlides(n) {
+      showSlides(slideIndex += n);
+    }
+    
+    function currentSlide(n) {
+      showSlides(slideIndex = n);
+    }
+    
+    function showSlides(n) {
+      let i;
+      let slides = document.getElementsByClassName("mySlides");
+      let dots = document.getElementsByClassName("dot");
+      if (n > slides.length) {slideIndex = 1}    
+      if (n < 1) {slideIndex = slides.length}
+      for (i = 0; i < slides.length; i++) {
+        slides[i].style.display = "none";  
+      }
+      for (i = 0; i < dots.length; i++) {
+        dots[i].className = dots[i].className.replace(" active", "");
+      }
+      slides[slideIndex-1].style.display = "block";  
+      dots[slideIndex-1].className += " active";
+      }
+    </script>
+
+    
+       
+        <div class="row">
+            <div class="col">
+                <div class="card card1"></div>
+                <div class="card card2"></div>
+                <div class="card card3"></div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col">
+                <button type="button" class="button" >DOWNLOAD THE<br><b>E-CHANNELLING APP</b></button>
+                <button type="button" class="button" >RECEIVE ADVICES <br><b>VIA VIDEO CALLS</b></button>
+                <button type="button" class="button" >EMERGENCY CALLS<br><b>OPTION</b></button>
+            </div>
+        </div>
+   
+        <br> <br> <br>
+        <div class="container">
+            <div class="column-1">
+                <div id="video-container">
+                    <video id="my-video" src="Vid1.mkv" autoplay></video>
+                    <button id="play-button">&#9658;</button>
+                </div>
+            
+                <script>
+                    var video = document.getElementById("my-video");
+                    var playPauseButton = document.getElementById("play-button");
+            
+                    function togglePlayPause() {
+                        if (video.paused || video.ended) {
+                            video.play();
+                            playPauseButton.innerHTML = "&#10074;&#10074;";
+                        } else {
+                            video.pause();
+                            playPauseButton.innerHTML = "&#9658;";
+                        }
+                    }
+            
+                    playPauseButton.addEventListener("click", togglePlayPause);
+                </script>
+            </div>
+            <div class="column-2">
+                <div class="container">
+                    
+                    <form action="#" method="post" class="search">
+                        <h2>Find a Doctor or Hospital</h2>
+                        <br>
+                        <label for="doctor">Doctor Name:</label>
+                        <select name="doctor" id="doctor">
+                            <option value="">Select a Doctor</option>
+                           
+			                <option value="Dr. Samantha(Physician)">Dr. Samantha(Physician)</option>
+			                <option value="Dr. Elizabeth(Physician)">Dr. Elizabeth(Physician)</option>
+			                <option value="Dr. Kevin(Physician)">Dr. Kevin(Physician)</option>
+			                <option value="Dr. Emily(Physician)">Dr. Emily(Physician)</option>
+			                <option value="Dr. William(Pediatrician)">Dr. William(Pediatrician)</option>
+			                <option value="Dr. Sarah(Pediatrician)">Dr. Sarah(Pediatrician)</option>
+			                <option value="Dr. Alexander(Pediatrician)">Dr. Alexander(Pediatrician)</option>
+			                <option value="Dr. Gabriella(Pediatrician)">Dr. Gabriella(Pediatrician)</option>
+			                <option value="Dr. Benjamin(Eye Surgeon)">Dr. Benjamin(Eye Surgeon)</option>
+			                <option value="Dr. Olivia(Eye Surgeon)">Dr. Olivia(Eye Surgeon)</option>
+			                <option value="Dr. Christopher(Eye Surgeon)">Dr. Christopher(Eye Surgeon)</option>
+			                <option value="Dr. Victoria(Eye Surgeon)">Dr. Victoria(Eye Surgeon)</option>
+			                <option value="Dr. Nathan(Cardiologist)">Dr. Nathan(Cardiologist)</option>
+			                <option value="Dr. Isabella(Cardiologist)">Dr. Isabella(Cardiologist)</option>
+			                <option value="Dr. Zachary(Cardiologist)">Dr. Zachary(Cardiologist)</option>
+			                <option value="Dr. Ava(Cardiologist)">Dr. Ava(Cardiologist)</option>
+			                
+                        </select>
+                        <label for="hospital">Hospital Name:</label>
+                        <select name="hospital" id="hospital">
+                            <option value="">Select a Hospital</option>
+                            <option value="Mercy Hospital">Mercy Hospital</option>
+                            <option value="St. Luke's Hospital">St. Luke's Hospital</option>
+                            <option value="Community Hospital">Community Hospital</option>
+                            <option value="University Hospital">University Hospital</option>
+                            <option value="Children's Hospital">Children's Hospital</option>
+                        </select>
+                        <input type="submit" value="Search">
+                    </form>
+                </div>
+                <script>
+                    const form = document.querySelector('form');
+                    const doctorSelect = document.getElementById('doctor');
+                    const hospitalSelect = document.getElementById('hospital');
+
+                    form.addEventListener('submit', (event) => {
+                    event.preventDefault(); // Prevents the form from submitting
+
+                    // Check doctor or hospital is selected
+                    if (!doctorSelect.value && !hospitalSelect.value) {
+                    alert('Please select either a doctor or a hospital.');
+                    return;
+                    }
+
+                    // If everything is valid, submit 
+                    form.submit();
+                    });
+
+                </script>
+            </div>
+        </div>
+       
+       
+  
+        <div class="footer">
+        
+        <footer>
+        <div class="waves">
+            <div class="wave" id="wave1"></div>
+            <div class="wave" id="wave2"></div>
+            <div class="wave" id="wave3"></div>
+            <div class="wave" id="wave4"></div>
+        </div>
+        <div class="col-1">
+            <h3>USEFUL LINKS</h3>
+            <a href="Index.html">Home</a><br>
+            <a href="aboutus/aboutus.html">About</a><br>
+            <a href="FAQ page/faq.html">FAQ</a><br>
+            <a href="Feedback page/feedback.html">Feedback</a><br>
+            <a href="contact/contactus.html">Contact</a>
+        </div>
+        <div class="col-2">
+            <h3>NEWSLETTER</h3>
+            <form>
+                <input type="email" placeholder="Your Email Address" required>
+                <br>
+                <button type="submit">SUBSCRIBE NOW</button>
+            </form>
+        </div>
+        <div class="col-3">
+            <h3>CONTACT</h3>
+            <p>info@sledoctor.lk</p>
+            <p>+94753178064</p>
+            <div class="social-icons">
+                <i class="fa-brands fa-facebook"></i>
+                <i class="fa-brands fa-instagram"></i>
+                <i class="fa-brands fa-twitter"></i>
+                <i class="fa-brands fa-youtube"></i>
+        </div>
+        </footer>
+        </div>
+    </div>
+    </body>
+</html>

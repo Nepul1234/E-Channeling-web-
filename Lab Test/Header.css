@@ -1,0 +1,35 @@
+
+/* Navigation bar*/
+nav {
+background-color: #6930C3;
+display: flex;
+position: relative;
+justify-content: center;
+align-items: center;
+color: #fff;
+/*justify-content: space-between;*/
+padding: 25px;
+box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3);
+}
+nav a {
+color: #fff;
+text-decoration: none;
+margin-left: 0;
+margin-right: 20px;
+font-weight: bold;
+padding: 20px;
+border-radius: 5px;
+box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.3);
+transition: all 0.3s ease;
+}
+nav a:hover {
+background-color: #fff;
+color: #554d3e;
+transform: translateY(-5px);
+box-shadow: 0px 5px 5px rgba(0, 0, 0, 0.3);
+}
+.navigation {
+padding: 0px;
+margin-top: 1px;
+position:relative;
+}
